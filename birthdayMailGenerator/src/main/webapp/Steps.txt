@@ -1,0 +1,20 @@
+1. Install NodeJS exe file in the system.
+2. npm install -g bower
+
+$$$$$$$-
+package.json list all your node dependencies, bower.json list all your javascript dependencies.
+node dependceny : express etc.
+js dependency : backbone, jquery etc..
+-$$$$$$
+
+............................................
+
+*. Create a directory eg. birthday-mail
+*. CMD line --> directory --> bower init (This will create bower.json file in the directory)
+*. CMD line --> bower install backbone -save (This will downlaod backbone dependceny in the bower_components folder and will add dependceny in bower.json)
+*. CMD line --> bower install underscore -save (This will downlaod underscore dependceny in the bower_components folder and will add dependceny in bower.json)
+*. Repeate same for Jquery
+*. CMD line --> bower list --paths (This will show all js files paths, Add these paths in the index.html file)
+*. Write code
+*. CMD line --> npm install express -save (This will downlaod express dependceny in the node_modules folder and will add dependceny in package.json, its being used to start the server.js :)
+*. Run node server (http://localhost:3000/ : applicaion is up on this server)

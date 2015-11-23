@@ -1,0 +1,25 @@
+{
+  "name": "autobirthdaymails",
+  "description": "Its a automatic birthday mail sender application",
+  "main": "index.js",
+  "authors": [
+    "rajesh"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.3",
+    "underscore": "~1.8.3",
+    "bootstrap": "~3.3.5",
+    "express": "~4.13.3"
+  }
+}
