@@ -65,7 +65,6 @@ $(document).ready(function() {
 		new Employee().fetch({
 		success: function(response){
                 for (var key in response.attributes) {
-                	debugger
                 	var employee = new Employee({
             			photo: "data:image/png;base64," + response.attributes[key].photo,
             			name : response.attributes[key].name,
@@ -79,5 +78,25 @@ $(document).ready(function() {
 	}
 
 	fetchAllEmployees();
+
+	    $('#employeeTable').DataTable( {
+	        "aoColumns":[
+	                     {"bSortable": false},
+	                     {"bSortable": true},
+	                     {"bSortable": false}
+	                     ]
+	    } );
 	
+	    $('#example').DataTable( {
+	    	"iDisplayLength": -1,
+	        "aoColumns":[
+	            {"bSortable": true},
+	            {"bSortable": false},
+	            {"bSortable": true},
+	            {"bSortable": true},
+	            {"bSortable": true},
+	            {"bSortable": true}
+	        ]
+	    } );
+	    
 });
